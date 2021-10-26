@@ -9,5 +9,5 @@ addEventListener("fetch", (event) => {
 async function handleRequest(request) {
   let path = "/" + request.url.split("/")[3];
   let forwardLink = await ShortLink.get(path);
-  return new Response().redirect(forwardLink, 302);
+  return Response.redirect(forwardLink, 302);
 }
