@@ -6,3 +6,7 @@ usage_model = ''
 compatibility_flags = []
 workers_dev = true
 compatibility_date = "2021-10-26"
+kv_namespaces = [
+    { binding = "ShortLink", id = "08e9c791740a4a0f8726a4c6ca2c6fe3" },
+    { binding = "ShortLinkRecord", id = "8686e0dcfae74be08126f888beff7f01"}
+]
