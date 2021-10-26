@@ -1,0 +1,8 @@
+{
+  "name": "short-link",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Kininaru/short-link.git",
+  "author": "Kininaru <shiftregister233@outlook.com>",
+  "license": "MIT"
+}
