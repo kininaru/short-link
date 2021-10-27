@@ -6,6 +6,13 @@ usage_model = ''
 compatibility_flags = []
 workers_dev = true
 compatibility_date = "2021-10-26"
+
 kv_namespaces = [
-    { binding = "ShortLink", id = "08e9c791740a4a0f8726a4c6ca2c6fe3" }
+    { binding = "ShortLink", id = "08e9c791740a4a0f8726a4c6ca2c6fe3", preview_id = "9176cebe2a344ae08e6b2f0bf7d7a34f" }
 ]
+
+[build]
+command = "yarn install && yarn run build"
+
+[build.upload]
+format = "service-worker"
