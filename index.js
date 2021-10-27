@@ -9,6 +9,9 @@ addEventListener("fetch", (event) => {
 async function handleRequest(request) {
   let path = "/" + request.url.split("/")[3];
   let forwardLink = await ShortLink.get(path);
+  if (forwardLink === null) request new Response("Link not found.", {
+    status: 404,
+  });
   console.log(`${path},${forwardLink},${Date.now()}`);
   return Response.redirect(forwardLink, 302);
 }
